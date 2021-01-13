@@ -1,0 +1,53 @@
+.cntct_banner {
+	background-color: #ffd4bc;
+	width: 100%;
+	height: 50vh;
+
+	.wrapper {
+		width: 80%;
+		height: 100%;
+		margin: auto;
+
+		.text-hldr {
+			padding-bottom: 50px;
+		}
+
+		.cntct_banner-header {
+			* {
+				font-family: flanella;
+				font-size: 80px;
+				color: white;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+
+
+.cntct_frame1 {
+	.card {
+		width: 800px;
+		height: 400px;
+		box-shadow: 1px 1px 12px 2px #a9a9a9;
+		background-color: white;
+		margin: auto;
+		transform: translateY(-100px);
+
+		.inlineBlock-parent {
+			height: 100%;
+		}
+
+		.form-hldr {
+			width: 60%;
+			background-color: white;
+			height: 100%;
+		}
+
+		.info-hldr {
+			width: 40%;
+			height: 100%;
+			background-color: #ffb68e;
+		}
+	}
+}

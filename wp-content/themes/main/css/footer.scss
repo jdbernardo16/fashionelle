@@ -1,0 +1,43 @@
+#footer {
+	padding: 20px 0;
+	.wrapper {
+		width: 80%;
+		margin: auto;
+
+		.menu-hldr {
+			width: 30%;
+
+			.footer-menu {
+				width: 25%;
+				text-align: left;
+				* {
+					font-family: montserrat;
+					font-weight: bold;
+					font-size: 16px;
+					color: black;
+				}
+			}
+		}
+
+		.footer-social {
+			width: 40%;
+			text-align: center;
+
+			.social img {
+				height: 20px;
+				margin-right: 20px;
+			}
+		}
+
+
+		.footer-copyright {
+			width: 30%;
+			* {
+				font-weight: bold;
+				font-family: montserrat;
+				font-size: 16px;
+				color: black;
+			}
+		}
+	}
+}
