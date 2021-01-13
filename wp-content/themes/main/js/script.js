@@ -9,6 +9,7 @@ var app = {
 
 		setup.menu();
 		setup.frontpage();
+		setup.aboutpage();
 	},
 
 
@@ -28,23 +29,29 @@ var app = {
 		frontpage: function() {
 
 
-			$('.f1-slider').slick({
+			$('.comments-hldr').slick({
 				infinite: true,
-				slidesToShow: 2,
+				slidesToShow: 1,
 				slidesToScroll: 1,
 				autoplay: true,
-  				autoplaySpeed: 2000,
+  				autoplaySpeed: 3000,
   				speed: 1000,
-  				arrow: false
+  				arrow: true
 			});
 
-			$('.product_slider-hldr').slick({
+			
+		},
+
+		aboutpage: function() {
+
+			$('.abt_slider').slick({
 				infinite: true,
-				slidesToShow: 4,
+				slidesToShow: 5,
 				slidesToScroll: 1,
 				autoplay: true,
   				autoplaySpeed: 5000,
 			});
+
 		}
 	}
 }

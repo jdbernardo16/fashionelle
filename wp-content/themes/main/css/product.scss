@@ -1,0 +1,134 @@
+/****
+* Product Banner
+*
+****/
+
+.prdct-banner {
+	.banner {
+		width: 100%;
+		height: 50vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		.gradient {
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8802871490393032) 68%, rgba(0,212,255,0) 100%);
+		}
+
+		.wrapper {
+			width: 80%;
+			height: 100%;
+			margin: auto;
+		}
+
+		.product-header {
+			* {
+				font-family: flanella;
+				font-size: 80px;
+				font-weight: bold;
+				color: #ccc;
+			}
+		}
+	}
+}
+
+.prdct_frame1 {
+	position: relative;
+	.wrapper {
+		padding: 50px 0;
+		width: 90%;
+		margin: auto;
+	}
+
+	.prdct_menu {
+		width: 20%;
+		margin-right: 5%;
+
+		.side_menu {
+			padding: 30px;
+			background-color: #f1f1f1;
+		}
+
+		.menu-title {
+			margin-bottom: 30px;
+			* {
+				font-family: Montserrat;
+				text-transform: uppercase;
+				letter-spacing: 4px;
+				font-weight: bold;
+			}
+		}
+
+		.side_menu-item {
+			margin-bottom: 20px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			* {
+				font-family: Montserrat;
+				font-weight: bold;
+				color: gray;
+			}
+		}
+	}
+
+	.product_list-cntnr {
+		width: 75%;
+
+
+		.product_hldr {
+			width: 30.33%;
+			margin-right: 4.5%;
+			background-color: #f1f1f1;
+			border-radius: 5px;
+			margin-bottom: 40px;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+
+			.product {
+				width: 80%;
+				margin: auto;
+				padding: 20px 0;
+			}
+
+			.product-image {
+				width: 100%;
+				height: 250px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				margin-bottom: 10px;
+			}
+
+			.product-name {
+				text-align: center;
+				margin-bottom: 10px;
+				* {
+					font-family: montserrat;
+					font-weight: bold;
+				}
+			}
+
+			.product-btn {
+				text-align: center;
+				.btn {
+					background-color: #ff4d09;
+					display: inline-block;
+					padding: 8px 30px;
+					text-align: center;
+					p {
+						font-family: poppins;
+						text-transform: uppercase;
+						color: white;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
