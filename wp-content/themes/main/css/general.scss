@@ -16,6 +16,12 @@
 
 #main {
 	position: relative;
-	margin-top: 100px;
+  overflow: hidden;
 
+}
+
+@media screen and (max-width: 1024px) {
+	#main {
+		margin-top: 70px;
+	}
 }

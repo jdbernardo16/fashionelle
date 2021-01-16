@@ -10,6 +10,7 @@ var app = {
 		setup.menu();
 		setup.frontpage();
 		setup.aboutpage();
+		setup.productpage();
 	},
 
 
@@ -24,6 +25,25 @@ var app = {
 			          $('#header').removeClass('scroll');
 			    }
 			});
+
+			/**
+			* Header
+			*/
+
+
+			// $(document).ready(function() {
+			// 	setTimeout(function(){
+			// 		$('.loader').fadeOut();
+			// 	}, 3000);
+			// }); 
+
+			$(document).ready(function(){
+				$('#nav-icon1').click(function(){
+					$(this).toggleClass('open');
+					$('.m-menu-hldr').toggleClass('open');
+				});
+			});
+
 		},
 
 		frontpage: function() {
@@ -39,6 +59,37 @@ var app = {
   				arrow: true
 			});
 
+			$('.product-cntnr .featured-slick').slick({
+				dots: true,
+				infinite: false,
+				speed: 300,
+				mobileFirst: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				responsive: [
+					{
+						breakpoint: 1025,
+						settings: 'unslick'
+					}
+				]
+			});
+
+
+			$('.image-hldr .ig-slick').slick({
+				dots: true,
+				infinite: false,
+				speed: 300,
+				mobileFirst: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				responsive: [
+					{
+						breakpoint: 1025,
+						settings: 'unslick'
+					}
+				]
+			});
+
 			
 		},
 
@@ -50,8 +101,24 @@ var app = {
 				slidesToScroll: 1,
 				autoplay: true,
   				autoplaySpeed: 5000,
+  				responsive: [
+					{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+						}
+					}
+				]
 			});
 
+		},
+
+		productpage: function() {
+			new Vue({
+			    el: '#tabs',
+			    data: { activetab: 1 },
+			});
 		}
 	}
 }
